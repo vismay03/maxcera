@@ -27,10 +27,10 @@ function App() {
         <div className="">
           <div className="bg-svg1 w-full">
           <ImageSlider/>
-          <span className="cta absolute text-5xl text-white">  Explore your different design of sanitary ware</span>
+          <span className="cta absolute text-5xl  font-mdbold text-white">  Explore your <span className="text-red-600" >different</span>  design of sanitary ware</span>
           
           </div>
-          <div className="bg-svg2 grid place-items-center">
+          <div className="bg-svg2 grid place-items-center text-center">
             <div className="companyIntro">
             <h2 className="text-red-700" >WELCOME TO MAXCERA SANITARYWARE</h2>
             <p className="my-6 opacity-75">

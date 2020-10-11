@@ -40,7 +40,8 @@
   background-image: url("Polygon\ 1.svg");
   background-size: cover;
   width: 100%;
-  height: 40rem;
+  margin-top: -1px;
+  height: 48.4rem;
   background-position: center;
 }  
 
@@ -59,10 +60,10 @@ span.cta {
 .App .bg-svg2 {
   margin: 0;
   padding: 0;
-  background-image: url("Polygon\ 2.svg");
+ background-image: url("Polygon\ 2.svg");
   background-size: cover;
-  height: 42.5rem;
-  margin-top: -239px;
+  height: 56.7rem;
+  margin-top: -16rem;
   background-position: center;
 }  
 
