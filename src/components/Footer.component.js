@@ -9,8 +9,8 @@ import twitter from './icon.footer/logo-twitter.svg';
 export default class Footer extends Component {
     render() {
         return (
-            <div className="footer w-full" >
-                <div className="contact text-white bg-black" >
+            <div className="footer w-full mt-auto">
+                <div className="contact text-white bg-black">
                     <div>
                         <section className="flex" >
                             <section className="flex w-1/2 border-gray-600 border-opacity-50 border-r-2  p-5 justify-center items-center">
