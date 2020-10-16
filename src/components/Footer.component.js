@@ -14,7 +14,7 @@ export default class Footer extends Component {
                     <div>
                         <section className="flex flex-col sm:flex-row" >
                             <section className="flex w-full sm:w-1/2 border-gray-600 border-opacity-50 border-r-2  p-5 justify-around items-center">
-                                <img className="w-12 h-12"  src={call} alt="" />
+                                <img className="sm:w-16 w-12 h-12 sm:h-16"  src={call} alt="" />
                                 <section className="flex flex-col m-2">
                                     <h4>CONTACT</h4>
                                     <p>maxceratradelinks@gmail.com</p>
@@ -22,10 +22,10 @@ export default class Footer extends Component {
                                 </section>
                             </section>
                             <section className="w-full sm:w-1/2 border-gray-600 flex p-5 justify-around items-center ">
-                                <img className="w-16 h-16"  src={location} alt="" />
-                                <section className="">
-                                    <h4 className="text-base" >LOCATION</h4>
-                                    <p className="w-48 text-sm"  >Office no. 64-65, Shreenath Complex, Trajpar, Morbi, Gujarat, India</p>
+                                <img className="sm:w-20 w-16 h-16 mr-5 sm:h-20"  src={location} alt="" />
+                                <section className="flex flex-col my-2">
+                                    <h4 className="text-base mr-12" >LOCATION</h4>
+                                    <p className="w-48 text-sm mr-20"  >Office no. 64-65, Shreenath Complex, Trajpar, Morbi, Gujarat, India</p>
                                 </section>
                             </section>
                         </section>

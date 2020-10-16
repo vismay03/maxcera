@@ -33,6 +33,11 @@
 
 }
 
+.c {
+  width: 40px;
+  height: 40px;
+}
+
 .aboutImg {
   height: 30rem;
 }
@@ -99,7 +104,7 @@ span.cta {
 
 @media (min-width: 640px) {
   span.cta {
-    width: 31rem;
+    width: 35rem;
   }
 } 
 
