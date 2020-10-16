@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import aboutImg from './aboutPicture.svg';
 
-export default class about extends Component {
+export default class extends Component {
     render() {
         return (
             <main className="flex flex-col w-full">
