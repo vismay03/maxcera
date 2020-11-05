@@ -16,7 +16,7 @@ export default class Footer extends Component {
                 <div className="contact text-white bg-black">
                     <div>
                         <section className="flex flex-col sm:flex-row" >
-                            <section className="flex w-full sm:w-1/2 border-gray-600 border-opacity-50 border-r-2  p-5 justify-around items-center">
+                            <section className="flex w-11/12  sm:w-1/2 border-gray-600 border-opacity-50 border-r-2  p-5 justify-around items-center">
                                 <img className="sm:w-16 w-12 h-12 sm:h-16"  src={call} alt="" />
                                 <section className="flex flex-col m-2">
                                     <h4 className="text-oswald" >CONTACT</h4>
@@ -24,9 +24,9 @@ export default class Footer extends Component {
                                     <p className="text-open-sans">+919016161636</p>
                                 </section>
                             </section>
-                            <section className="w-full sm:w-1/2 border-gray-600 flex p-5 justify-around items-center ">
-                                <img className="sm:w-20 w-16 h-16 mr-5 sm:h-20"  src={location} alt="" />
-                                <section className="flex flex-col my-2">
+                            <section className=" w-full sm:w-1/2 border-gray-600 flex  p-5 justify-around items-center ">
+                                <img className="sm:w-20 w-16 h-16 sm:h-20"  src={location} alt="" />
+                                <section className="flex flex-col ml-0">
                                     <h4 className="text-base mr-12 text-oswald" >LOCATION</h4>
                                     <p className="w-48 text-sm mr-20 text-open-sans"  >Office no. 64-65, Shreenath Complex, Trajpar, Morbi, Gujarat, India</p>
                                 </section>
@@ -36,10 +36,10 @@ export default class Footer extends Component {
                 </div>
 
                 <div className="flex flex-col sm:flex-row justify-around flex-wrap bg-gray-900  text-white py-8" >
-                    <section className="flex flex-col p-8" >
+                    <section className="flex flex-col p-10 " >
 
-                        <img className="h-24 w-40" src={logo} alt=""/>
-                        <section className=" flex my-2">
+                        <img className="h-24 w-40 " src={logo} alt=""/>
+                        <section className=" flex myx-2 ml-2">
                            <span className="p-1 shadow-md bg-opacity-75 bg-purple-200 hover:bg-pink-100" >
                                 <img className="w-6 h-6" src={facebook} alt=""/>
                             </span> 
@@ -53,7 +53,7 @@ export default class Footer extends Component {
                     </section>
                        
 
-                    <section className="py-10 flex flex-col w-1/4">
+                    <section className="p-10 flex flex-col">
                     <p className="py-3 text-oswald text-lg" >SANITARY WARE</p>
                     <Link className="text-gray-400 text-open-sans" to="/washbasin">washbasin</Link>
                     <Link className="text-gray-400 text-open-sans"  to="/designerVitrosaBasinSet">Designer Vitrosa Basin Set</Link>
@@ -63,7 +63,7 @@ export default class Footer extends Component {
                     <Link className="text-gray-400 text-open-sans"  to="/Urinals">Urinals</Link>
                     
                     </section>
-                    <section className="py-10 flex flex-col w-1/4">
+                    <section className="p-10 flex flex-col">
                     <p className="py-3 text-oswald text-lg" >USEFUL LINKS</p>
                     <Link className="text-gray-400" to="/about">about</Link>
                     <Link className="text-gray-400" to="/contact" >contact</Link>
