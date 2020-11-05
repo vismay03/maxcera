@@ -6,15 +6,27 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "http-proxy-middleware": "^1.0.6",
+    "mongoose": "^5.10.9",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0",
     "react": "^16.13.1",
     "react-alice-carousel": "^2.0.1",
     "react-component-gallery": "^1.2.1",
     "react-dom": "^16.13.1",
+    "react-pdf": "^5.0.0",
+    "react-preloaders": "^3.0.3",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-side-bar": "^1.0.4",
     "react-sidebar-ui": "^1.2.1",
-    "tailwindcss": "^1.8.11"
+    "tailwindcss": "^1.8.11",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
@@ -23,7 +35,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NPM-CONFIG_PRODUCTION=false npm insall npm && run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
   }
 }

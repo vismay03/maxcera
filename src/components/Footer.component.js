@@ -5,11 +5,14 @@ import logo from './icon.footer/logo.svg';
 import facebook from './icon.footer/logo-facebook.svg';
 import instagram from './icon.footer/logo-instagram.svg';
 import twitter from './icon.footer/logo-twitter.svg';
+import Zoom from 'react-reveal/Zoom';
+import { Link } from 'react-router-dom';
 
 export default class Footer extends Component {
     render() {
         return (
             <div className="footer w-full mt-auto">
+                <Zoom bottom>
                 <div className="contact text-white bg-black">
                     <div>
                         <section className="flex flex-col sm:flex-row" >
@@ -50,18 +53,28 @@ export default class Footer extends Component {
                     </section>
                        
 
-                    <section className="p-8 w-1/4">
-                    <p>SANITARY WARE</p>
+                    <section className="py-10 flex flex-col w-1/4">
+                    <p className="py-3" >SANITARY WARE</p>
+                    <Link className="text-gray-400" to="/washbasin">washbasin</Link>
+                    <Link className="text-gray-400"  to="/designerVitrosaBasinSet">Designer Vitrosa Basin Set</Link>
+                    <Link className="text-gray-400"  to="/waterClosest">Water Closest</Link>
+                    <Link className="text-gray-400"  to="/toiletPan">Toilet Pan</Link>
+                    <Link className="text-gray-400"  to="/seatCoversAndAccessories">Seat Covers And Accessories</Link>
+                    <Link className="text-gray-400"  to="/Urinals">Urinals</Link>
+                    
                     </section>
-                    <section className="p-8 w-1/4">
-                    <p>USEFUL LINKS</p>
+                    <section className="py-10 flex flex-col w-1/4">
+                    <p className="py-3" >USEFUL LINKS</p>
+                    <Link className="text-gray-400" to="/about">about</Link>
+                    <Link className="text-gray-400" to="/contact" >contact</Link>
+                    
                     </section>
                 </div>
 
                 <div className="text-center w-full py-2 bg-gray-900 text-gray-400">
                     &copy; 2020 Maxcera sanitaryware. All rights reserved.
                 </div>
-
+            </Zoom>
             </div>
         );
     }

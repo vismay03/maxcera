@@ -2,17 +2,24 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from  './logo.svg';
 import './tailwind.output.css';
-import {  BrowserRouter, Route, Link } from "react-router-dom";
+import {  BrowserRouter, Route, Link, Switch, NavLink } from "react-router-dom";
 import about  from './pages/about';
 import contact  from './pages/contact';
+import Home from './pages/Home';
 import "Polygon1.svg";
-// import {Sidebar, InputItem, DropdownItem, Icon, Item, Logo, LogoText} from 'react-sidebar-ui';
-import ImageSlider from './components/ImageSlider.component';
-import Category from './components/Category.component';
 import Footer from './components/Footer.component';
-import Intro from './components/Intro.component';
 import Menu from './components/icon.footer/navmenu.svg';
 import Close from './components/icon.footer/close-logo.svg';
+import washbasin from './pages/washbasin';
+import designerVitrosaBasinSet from './pages/designerVitrosaBasinSet';
+import waterClosest from './pages/waterclosest';
+import toiletPan from './pages/toiletpan';
+import seatCoversAndAccessories from './pages/seatCoversAndAccessories';
+import Urinals from './pages/urinals';
+import adminLogin from './pages/adminLogin';
+import admin from './pages/admin';
+import {Circle} from 'react-preloaders';
+import PrivateRoute from  './components/PrivateRoute';
 
 class App  extends Component {
 
@@ -20,13 +27,15 @@ constructor(props) {
   super(props);
   this.state = {
     show: true,
-    opened: false
+    opened: false,
+  
   }
- 
 }
 
+
+
 onClickAbout = () => {
-  this.setState( { show: false } );
+  this.setState( { show:false } );
 }
 
 onClickHome = () => {
@@ -36,7 +45,6 @@ onClickHome = () => {
 onClickContact = () => {
   this.setState( { show: false } );
 }
-
 
 sidebarOpen = () => {
   this.setState( { opened:true } )
@@ -51,14 +59,14 @@ render() {
   return (
     <BrowserRouter>
       <div className="App">
-
+        <Circle time={3000} />
         <header className="header flex sm:justify-around justify-between bg-black uppercase text-right text-white" >
           <img src={logo} className="logo ml-4 h-15 " alt=""/>
-          { this.state.opened ? 
-          <img src={Close} onClick={ this.sidebarClose } className="c self-center absolute right-0 mr-4 sm:hidden block z-20 " alt=""/>
-          :
-          <img src={ Menu } onClick={ this.sidebarOpen } className=" absolute right-0 self-center mr-4 sm:hidden block z-20" alt=""/>
-}
+            { this.state.opened ? 
+            <img src={Close} onClick={ this.sidebarClose } className="c self-center absolute right-0 mr-4 sm:hidden block z-20 " alt=""/>
+            :
+            <img src={ Menu } onClick={ this.sidebarOpen } className=" absolute right-0 self-center mr-4 sm:hidden block z-20" alt=""/>
+            }
           <div className="sm:flex hidden text-center flex-wrap p-8"> 
             <Link className="px-4" onClick={this.onClickHome} to="/">Home</Link>
             <Link className="px-4" >Sanitaryware</Link>
@@ -66,43 +74,26 @@ render() {
             <Link className="px-4" onClick={this.onClickContact} to="/contact">Contact us</Link>
           </div>
         </header>
-        
-        {/* <Sidebar opened = { this.state.opened } /> */}
+        <div className={ this.state.opened ? 'open transition duration-500 ease-linear sidebar flex right-0 mt-20 flex-col justify-evenly absolute text-center bg-red-700 text-white z-10' : 'close hidden' } >
+          <Link className="px-4" onClick={this.onClickHome} to="/">Home</Link>
+          <Link className="px-4" >Sanitaryware</Link>
+          <NavLink className="px-4" onClick={this.onClickAbout} to="/about">About us</NavLink>
+          <Link className="px-4" onClick={this.onClickContact} to="/contact">Contact us</Link>
+        </div>        
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={about} />
 
-        <div 
-                    className={ this.state.opened ? 'open transition duration-500 ease-linear sidebar flex right-0 mt-20 flex-col justify-evenly absolute text-center bg-red-700 text-white z-10' : 'close hidden' }    
-                >
-                    <Link className="px-4" onClick={this.onClickHome} to="/">Home</Link>
-                    <Link className="px-4" >Sanitaryware</Link>
-                    <Link className="px-4" onClick={this.onClickAbout} to="/about">About us</Link>
-                    <Link className="px-4" onClick={this.onClickContact} to="/contact">Contact us</Link>
-                   
-                </div>
-        
-        {  this.state.show === true  ?
-      
-        <div className="main">
-        
-          <div className="bg-svg1 w-full">
-          
-                <div className="hideOnAbout">
-                   <ImageSlider/>
-                   <span className="cta absolute text-center text-2xl sm:text-5xl w-2 font-mdbold text-white">  Explore your <span className="text-red-600" >different</span>  design of sanitary ware</span>
-                </div>    
-      
-          </div>
-        <Intro/>
-        
-        <div className="mt-16 w-full flex justify-center items-center flex-col" >
-        <h3 className="text-2xl text-center text-red-800 uppercase">Our <span className="font-bold">Products</span></h3>
-        <Category/>
-        </div>
-        </div> 
-        :
-        ""
-        }
-            <Route path="/about" component={about} />
-            <Route path="/contact" component={contact} />
+          <Route path="/contact" component={contact} />
+          <PrivateRoute component={admin} path="/admin"/>
+          <Route path="/washbasin" component={washbasin} />
+          <Route path="/designerVitrosaBasinSet" component={designerVitrosaBasinSet} />
+          <Route path="/waterClosest" component={waterClosest} />
+          <Route path="/toiletPan" component={toiletPan} />
+          <Route path="/seatCoversAndAccessories" component={seatCoversAndAccessories} />
+          <Route path="/Urinals" component={Urinals} />
+          <Route path="/adminLogin" component={adminLogin}  />
+        </Switch>
         <Footer />  
       </div>
     </BrowserRouter>
