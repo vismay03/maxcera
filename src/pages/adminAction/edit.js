@@ -110,7 +110,7 @@ onFormSubmit = () => {
                   <Circle customLoading={this.state.loading} />
 
                 {/* {this.state.products.map( (product,index) => ( */}
-                <div>    
+                <div>     
                 <form onSubmit={this.onFormSubmit} className="flex w-64 p-5 border border-gray-400 content-evenly flex-col">
                          <input className="border m-2 py-1 px-2 border-gray-400 placeholder-gray-500" list="category" value={this.state.category} onChange= {this.onChangeProductCategory} placeholder="Product Category" />
                     <datalist id="category">
