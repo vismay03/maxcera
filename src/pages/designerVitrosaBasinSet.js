@@ -9,7 +9,8 @@ constructor(props) {
     super(props);
     this.state = {
         products: [],
-        loading: true 
+        loading: true,
+        pdfs : [], 
     }
 }    
 
@@ -24,7 +25,12 @@ componentDidMount() {
             products: res.data
         })
     })
-    
+    axios.get('http://localhost:4000/sendpdf')
+    .then(res=>{
+        this.setState({    
+            pdfs: res.data
+        })
+    })
     
 }
     
@@ -35,7 +41,7 @@ componentDidMount() {
                     
                     <div className="relative w-full " >
                      
-                     <h2 className="text-lato mt-2 text-center uppercase text-xl" >Washbasin</h2>
+                     <h2 className="text-lato mt-2 text-center uppercase text-xl" >Designer vitrosa basin set</h2>
                      { this.state.pdfs.map((pd,i) => (
                          <>    
                          {pd.pdfcategory === "Designer vitrosa basin set" ? 

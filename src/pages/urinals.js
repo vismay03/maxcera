@@ -10,7 +10,8 @@ constructor(props) {
     super(props);
     this.state = {
         products: [],
-        loading: true
+        loading: true,
+        pdfs: []
     }
 }    
 
@@ -22,10 +23,16 @@ componentDidMount() {
         console.log(res.data);
         this.setState({
             loading: false,
-            products: res.data
+            products: res.data,
+            pdfs : []
         })
     })
-    
+    axios.get('http://localhost:4000/sendpdf')
+    .then(res=>{
+        this.setState({    
+            pdfs: res.data
+        })
+    })
     
 }
     

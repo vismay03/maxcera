@@ -64,12 +64,12 @@ export default class contact extends Component {
             <main className="flex flex-col w-full"  >
                 <Circle time={2000} customLoading={this.state.loading} />
                 <div className="aboutImage text-white flex justify-center pl-16 flex-col">
-                    <h3 className="text-4xl font-semibold uppercase" >Contact us</h3>
-                    <p className="text-1xl">Established in the year 2016 at Morbi, Gujarat</p>
+                    <h3 className="text-4xl font-semibold uppercase text-oswald " >Contact us</h3>
+                    <p className="text-1xl text-open-sans">Established in the year 2016 at Morbi, Gujarat</p>
                 </div>
-                <div className="w-full flex flex-col p-6 justify-around items-center border"> 
-                    <h2 className=" text-base py-2 text-center text-gray-900">Contact us</h2>
-                    <form className="flex flex-col w-64 p-3 content-evenly border" onSubmit={this.submitEmail}>
+                <div className="w-full flex flex-col py-10 justify-around items-center border"> 
+                    <h2 className=" text-2xl py-4 text-center uppercase  text-oswald text-darkorange-600">Contact us</h2>
+                    <form className="shadow-md  flex flex-col w-64 p-3 content-evenly border" onSubmit={this.submitEmail}>
                         <input className="border m-2 py-1 px-2 placeholder-gray-500" value={this.state.name} onChange={this.onNameChange} type="text" placeholder="Name" />
                         <input className="border m-2 py-1 px-2 placeholder-gray-500" onChange={this.onEmailChange} type="text" placeholder="Email" />
                         <textarea className="border m-2 py-1 px-2 placeholder-gray-500" onChange={this.onMsgChange} > </textarea>

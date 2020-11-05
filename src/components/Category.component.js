@@ -49,10 +49,10 @@ export default function Category() {
             { categoryImgs.map ( img => { 
                 return (
                     <Link to={img.to}>
-                    <div className="img-grid flex justify-center items-center">
+                    <div className="img-grid flex justify-center items-center ">
                         
                         <img src={img.src} alt=""/> 
-                            <p className="caption font-medium text-white text-2xl z-10" > { img.caption } </p>
+                            <p className="caption font-medium text-white text-oswald text-2xl z-10" > { img.caption } </p>
                                 <div className="overlay"></div>
                             </div>
                             </Link>

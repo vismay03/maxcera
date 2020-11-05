@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { Redirect } from 'react-router-dom';
-import { isLogin, login } from './utils/in';
+import { Redirect,hashHistory  } from 'react-router-dom';
+import { isLogin, login, logout } from './utils/in';
 
 export default class adminLogin extends React.Component {
 
@@ -37,14 +37,15 @@ export default class adminLogin extends React.Component {
     onFormSubmit = (e, props) => {
       
            e.preventDefault();
-           { this.state.login[0].username === this.state.username && this.state.login[0].password === this.state.password  ?
-            
-           
+           if(this.state.login[0].username === this.state.username && this.state.login[0].password === this.state.password)  {
            login()
+           this.props.history.push('/admin')
             
-                :
-              login()
             }
+            else{
+                this.props.history.push('/adminLogin')
+            }
+           
          
             
         

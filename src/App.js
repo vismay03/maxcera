@@ -59,7 +59,7 @@ render() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Circle time={3000} />
+        {/* <Circle time={3000} /> */}
         <header className="header flex sm:justify-around justify-between bg-black uppercase text-right text-white" >
           <img src={logo} className="logo ml-4 h-15 " alt=""/>
             { this.state.opened ? 

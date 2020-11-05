@@ -19,16 +19,16 @@ export default class Footer extends Component {
                             <section className="flex w-full sm:w-1/2 border-gray-600 border-opacity-50 border-r-2  p-5 justify-around items-center">
                                 <img className="sm:w-16 w-12 h-12 sm:h-16"  src={call} alt="" />
                                 <section className="flex flex-col m-2">
-                                    <h4>CONTACT</h4>
-                                    <p>maxceratradelinks@gmail.com</p>
-                                    <p>+919016161636</p>
+                                    <h4 className="text-oswald" >CONTACT</h4>
+                                    <p className="text-open-sans" >maxceratradelinks@gmail.com</p>
+                                    <p className="text-open-sans">+919016161636</p>
                                 </section>
                             </section>
                             <section className="w-full sm:w-1/2 border-gray-600 flex p-5 justify-around items-center ">
                                 <img className="sm:w-20 w-16 h-16 mr-5 sm:h-20"  src={location} alt="" />
                                 <section className="flex flex-col my-2">
-                                    <h4 className="text-base mr-12" >LOCATION</h4>
-                                    <p className="w-48 text-sm mr-20"  >Office no. 64-65, Shreenath Complex, Trajpar, Morbi, Gujarat, India</p>
+                                    <h4 className="text-base mr-12 text-oswald" >LOCATION</h4>
+                                    <p className="w-48 text-sm mr-20 text-open-sans"  >Office no. 64-65, Shreenath Complex, Trajpar, Morbi, Gujarat, India</p>
                                 </section>
                             </section>
                         </section>
@@ -54,24 +54,24 @@ export default class Footer extends Component {
                        
 
                     <section className="py-10 flex flex-col w-1/4">
-                    <p className="py-3" >SANITARY WARE</p>
-                    <Link className="text-gray-400" to="/washbasin">washbasin</Link>
-                    <Link className="text-gray-400"  to="/designerVitrosaBasinSet">Designer Vitrosa Basin Set</Link>
-                    <Link className="text-gray-400"  to="/waterClosest">Water Closest</Link>
-                    <Link className="text-gray-400"  to="/toiletPan">Toilet Pan</Link>
-                    <Link className="text-gray-400"  to="/seatCoversAndAccessories">Seat Covers And Accessories</Link>
-                    <Link className="text-gray-400"  to="/Urinals">Urinals</Link>
+                    <p className="py-3 text-oswald text-lg" >SANITARY WARE</p>
+                    <Link className="text-gray-400 text-open-sans" to="/washbasin">washbasin</Link>
+                    <Link className="text-gray-400 text-open-sans"  to="/designerVitrosaBasinSet">Designer Vitrosa Basin Set</Link>
+                    <Link className="text-gray-400 text-open-sans"  to="/waterClosest">Water Closest</Link>
+                    <Link className="text-gray-400 text-open-sans"  to="/toiletPan">Toilet Pan</Link>
+                    <Link className="text-gray-400 text-open-sans"  to="/seatCoversAndAccessories">Seat Covers And Accessories</Link>
+                    <Link className="text-gray-400 text-open-sans"  to="/Urinals">Urinals</Link>
                     
                     </section>
                     <section className="py-10 flex flex-col w-1/4">
-                    <p className="py-3" >USEFUL LINKS</p>
+                    <p className="py-3 text-oswald text-lg" >USEFUL LINKS</p>
                     <Link className="text-gray-400" to="/about">about</Link>
                     <Link className="text-gray-400" to="/contact" >contact</Link>
                     
                     </section>
                 </div>
 
-                <div className="text-center w-full py-2 bg-gray-900 text-gray-400">
+                <div className="text-center text-sm text-lato w-full py-2 bg-gray-900 text-gray-400">
                     &copy; 2020 Maxcera sanitaryware. All rights reserved.
                 </div>
             </Zoom>

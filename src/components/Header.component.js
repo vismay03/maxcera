@@ -5,7 +5,7 @@ import logo from  './logo.svg';
 export default class Header extends Component {
     render() {
         return (
-              <header className="flex justify-around bg-black uppercase text-right text-white" >
+              <header className="flex text-oswald justify-around bg-black uppercase text-right text-white" >
           <img src={logo} className="logo w-50 h-18" alt=""/>
           <div className="flex text-center w-30 p-8"> 
 

@@ -39,9 +39,10 @@ componentDidMount() {
 
             <main className="flex flex-col flex-wrap justify-center items-center" >
                  <Circle   customLoading={this.state.loading} />
-                 <div className="relative w-full " >
+                 <div className="relative w-11/12 mx-auto" >
                      
-                <h2 className="text-oswald mt-2 text-center uppercase text-2xl text-orange-900" >Washbasin</h2>
+                <h2 className="text-oswald py-8 mt-2 text-center uppercase text-2xl  font-medium" >Washbasin</h2>
+              
                 { this.state.pdfs.map((pd,i) => (
                     <>    
                     {pd.pdfcategory === "Washbasin" ? 
@@ -55,7 +56,7 @@ componentDidMount() {
 
                 
                 </div>
-                <div className="flex flex-wrap justify-center items-center">
+                <div className="flex flex-wrap py-12 justify-center items-center">
                 {this.state.products.map( (product, index) => (
                     <>    
                         {product.category === "Washbasin" ?  

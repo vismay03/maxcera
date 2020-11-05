@@ -4,13 +4,12 @@ import deleteProduct from './adminAction/delete';
 import add from './adminAction/add';
 import edit from './adminAction/edit';
 import { logout } from './utils/in';
-import addpdf from './adminAction/addpdf';
 
 export default class admin extends Component {
 
     onClickLogout = () => {
         logout();
-        // <Redirect to="/adminLogin" />
+        this.props.history.push('/adminLogin')
     }
 
     render() {
