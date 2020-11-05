@@ -36,10 +36,10 @@ export default class Footer extends Component {
                 </div>
 
                 <div className="flex flex-col sm:flex-row justify-around flex-wrap bg-gray-900  text-white py-8" >
-                    <section className="flex flex-col p-10 " >
+                    <section className="flex flex-col px-8 py-4 " >
 
                         <img className="h-24 w-40 " src={logo} alt=""/>
-                        <section className=" flex myx-2 ml-2">
+                        <section className=" flex ml-1">
                            <span className="p-1 shadow-md bg-opacity-75 bg-purple-200 hover:bg-pink-100" >
                                 <img className="w-6 h-6" src={facebook} alt=""/>
                             </span> 
@@ -53,7 +53,7 @@ export default class Footer extends Component {
                     </section>
                        
 
-                    <section className="p-10 flex flex-col">
+                    <section className="px-8 py-4  flex flex-col">
                     <p className="py-3 text-oswald text-lg" >SANITARY WARE</p>
                     <Link className="text-gray-400 text-open-sans" to="/washbasin">washbasin</Link>
                     <Link className="text-gray-400 text-open-sans"  to="/designerVitrosaBasinSet">Designer Vitrosa Basin Set</Link>
@@ -63,7 +63,7 @@ export default class Footer extends Component {
                     <Link className="text-gray-400 text-open-sans"  to="/Urinals">Urinals</Link>
                     
                     </section>
-                    <section className="p-10 flex flex-col">
+                    <section className="px-8 py-4  flex flex-col">
                     <p className="py-3 text-oswald text-lg" >USEFUL LINKS</p>
                     <Link className="text-gray-400" to="/about">about</Link>
                     <Link className="text-gray-400" to="/contact" >contact</Link>

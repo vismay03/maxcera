@@ -33,7 +33,7 @@ export default class about extends Component {
                <div className="flex flex-wrap-reverse justify-around items-center p-12 w-full" >
                <Slide left>
                     <div className="flex flex-col  sm:w-1/3">
-                        <h3 className="text-3xl font-semibold text-oswald " >We are manufacturing sanitary ware since 2016</h3>
+                        <h3 className="text-3xl mt-8 sm:ml-0 font-semibold text-oswald " >We are manufacturing sanitary ware since 2016</h3>
                         <p className="mt-8 text-open-sans">Maxcera sanitaryware is a Proprietership firm manufacturing an excellent quality range of Bathroom Sanitaryware like Water Closets, Designer Basins, Toilet Pans and Seat Covers etc </p>
                         <p className="my-8 text-open-sans" >These products are sourced from reliable market vendors and can be availed by our clients at resonable prices.</p>
                         <p className="text-open-sans">Under the guidences of our mentor "Mr. Mitesh, Who holds profound knowledge and experience in this domain, we have been able to aptly satisfy our clients.</p>
