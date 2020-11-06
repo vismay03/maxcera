@@ -9,8 +9,6 @@ const path = require('path');
 const loginRoute = require('./routes/loginRoute');
 
 
-
-
 app.use(cors());
 app.use(express.json());
 
