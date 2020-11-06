@@ -9,6 +9,8 @@ const path = require('path');
 const loginRoute = require('./routes/loginRoute');
 
 
+
+
 app.use(cors());
 app.use(express.json());
 
@@ -17,6 +19,9 @@ mongoose.connect(uri,{
   useUnifiedTopology: true,
   useCreateIndex: true
 })
+
+
+
 
 const bodyParser = require('body-parser');
 const loginModel = require('./models/productModel');
