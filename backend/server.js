@@ -2,7 +2,7 @@
 const cors = require('cors');
 const mongoose = require('mongoose');
 const express = require('express');
-const uri = process.env.ATLAS_URI || "mongodb+srv://Maxcera:Maxcer%40@cluster0.y1fcd.mongodb.net/Maxcera?retryWrites=true&w=majority";
+const uri = process.env.ATLAS_URI || "mongodb://Maxcera:Maxcer%40@cluster0-shard-00-00.y1fcd.mongodb.net:27017,cluster0-shard-00-01.y1fcd.mongodb.net:27017,cluster0-shard-00-02.y1fcd.mongodb.net:27017/Maxcera?ssl=true&replicaSet=atlas-p1snsz-shard-0&authSource=admin&retryWrites=true&w=majority";
 const app = express();
 const productRoute = require('./routes/productRoute');
 const path = require('path');
