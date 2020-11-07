@@ -18,7 +18,6 @@ import seatCoversAndAccessories from './pages/seatCoversAndAccessories';
 import Urinals from './pages/urinals';
 import adminLogin from './pages/adminLogin';
 import admin from './pages/admin';
-import {Circle} from 'react-preloaders';
 import PrivateRoute from  './components/PrivateRoute';
 
 class App  extends Component {
@@ -59,7 +58,7 @@ render() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Circle time={3000} /> */}
+      
         <header className="header flex sm:justify-around justify-between bg-black uppercase text-right text-white" >
           <img src={logo} className="logo ml-4 h-15 " alt=""/>
             { this.state.opened ? 

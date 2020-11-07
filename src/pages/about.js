@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import aboutImg from './aboutPicture.svg';
-import {Circle} from 'react-preloaders';
 import Slide from 'react-reveal/Slide';
 import Flip from 'react-reveal/Flip';
 export default class about extends Component {
@@ -22,7 +21,6 @@ export default class about extends Component {
         
         return (
             <main className="flex flex-col w-full">
-                 {/* <Circle time={2000} customLoading={this.state.loading} /> */}
                <div className="aboutImage text-white flex justify-center pl-16 flex-col">
                 <Flip left>
                <h3 className="text-4xl font-semibold uppercase text-oswald" >about us</h3>

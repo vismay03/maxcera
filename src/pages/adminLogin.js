@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { Redirect,hashHistory  } from 'react-router-dom';
-import { isLogin, login, logout } from './utils/in';
+import { Redirect  } from 'react-router-dom';
+import { login } from './utils/in';
 
 export default class adminLogin extends React.Component {
 

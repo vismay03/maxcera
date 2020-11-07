@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import { login, logout, isLogin } from './pages/utils/in';
+import { isLogin } from './pages/utils/in';
 const initialState = {}
 const reducer = combineReducers ({
    isLogin: isLogin

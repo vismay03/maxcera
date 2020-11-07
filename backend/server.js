@@ -44,6 +44,6 @@ app.use(loginRoute);
 
 
 
-app.listen(process.env.PORT || 5000, ()=>{
+app.listen(process.env.PORT || 4000, ()=>{
   console.log('MongoDB Connected… running on 4000');
 })
