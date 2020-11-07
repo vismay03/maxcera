@@ -15,7 +15,7 @@ constructor(props) {
 }    
 
 componentDidMount() {
-    axios.get('/washbasin')
+    axios.get('http://localhost:4000/washbasin')
     .then(res=>{
        
         this.setState({
