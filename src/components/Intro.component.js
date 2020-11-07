@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+import { motion } from "framer-motion"
 export default class Intro extends Component {
     render() {
         return (
@@ -11,8 +12,9 @@ export default class Intro extends Component {
               Maxcera sanitaryware is a Proprietership firm engaged in trading an excellent quality range of Bathroom 
               Sanitaryware like Water Closets, Designer Basins 
             </p>
-            <a href="/about" className="bg-red-700 text-sm px-8 mt-10 text-open-sans py-2 text-white hover:bg-red-900 ">READ MORE</a>
-  
+            <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+                  <a href="/about" className="bg-red-700 text-sm px-8 mt-10 text-open-sans py-2 text-white hover:bg-red-900 ">READ MORE</a>
+            </motion.button>
             </div>
            </Fade>
           </div>

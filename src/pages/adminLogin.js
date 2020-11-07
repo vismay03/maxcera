@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Redirect  } from 'react-router-dom';
 import { login } from './utils/in';
 
+
+
 export default class adminLogin extends React.Component {
 
     constructor(props) {
@@ -22,9 +24,10 @@ export default class adminLogin extends React.Component {
 
 
     componentDidMount() {
-        axios.get('/adminLogin')
+        
+        axios.get('http://localhost:4000/adminlogin')
         .then(res=>{
-            console.log(res.data);
+           
             this.setState({
                 login: res.data,
             })
