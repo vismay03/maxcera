@@ -16,7 +16,7 @@ constructor(props) {
 }    
 
 componentDidMount() {
-    axios.get('http://localhost:4000/washbasin'
+    axios.get('/washbasin'
    
     )
     .then(res=>{

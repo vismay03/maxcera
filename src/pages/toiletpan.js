@@ -16,7 +16,7 @@ constructor(props) {
 }    
 
 componentDidMount() {
-    axios.get('http://localhost:4000/washbasin')
+    axios.get('/washbasin')
     .then(res=>{
         console.log(res.data);
         this.setState({
@@ -24,7 +24,7 @@ componentDidMount() {
             products: res.data
         })
     })
-    axios.get('http://localhost:4000/sendpdf')
+    axios.get('/sendpdf')
     .then(res=>{
         this.setState({    
             pdfs: res.data
