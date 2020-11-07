@@ -11,7 +11,7 @@ export default class adminLogin extends React.Component {
             login: [],
             username: "",
             password: "" ,
-           
+            
         }
       
         this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -38,7 +38,9 @@ export default class adminLogin extends React.Component {
            e.preventDefault();
            if(this.state.login[0].username === this.state.username && this.state.login[0].password === this.state.password)  {
            login()
+           console.log(true)
            this.props.history.push('/admin')
+
             
             }
             else{
