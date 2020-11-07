@@ -20,6 +20,7 @@ componentDidMount() {
     )
     .then(res=>{
         console.log(res.data);
+        
         this.setState({
             loading: false,
             products: res.data

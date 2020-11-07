@@ -4,7 +4,7 @@ router.get('/adminlogin' , async (req, res)  => {
     try{
         const login = await loginModel.find({});
         
-       return res.json(login);
+        res.json(login);
     }
     catch(err){
         res.status(500).send({ get_error: 'error' });
