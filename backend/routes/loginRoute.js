@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const loginModel = require('../models/loginModel');
-router.get('/adminlogin' , async (req, res)  => {
+router.get('/adminLogin' , async (req, res)  => {
     try{
         const login = await loginModel.find({});
         
