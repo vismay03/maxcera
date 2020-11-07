@@ -40,7 +40,7 @@ mongoose.connection.once('open', () => {
 });
 
 app.use(productRoute);
-app.use("/adminlogin",loginRoute);
+app.use("/adminLogin",loginRoute);
 
 
 
