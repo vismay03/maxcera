@@ -29,6 +29,7 @@ export default class adminLogin extends React.Component {
                 login: r.data,
             })
         })
+        .catch(err=> console.log(err) )
        
    
     }
