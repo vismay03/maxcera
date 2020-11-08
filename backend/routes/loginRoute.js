@@ -7,7 +7,7 @@ router.get('/adminlogin' , async (req, res)  => {
         return res.json(login);
     }
     catch(err){
-        res.status(500).send({ get_error: 'error' });
+        return res.status(500).send({ get_error: 'error' });
     }
 });
 
