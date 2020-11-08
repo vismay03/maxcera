@@ -25,11 +25,9 @@ export default class adminLogin extends React.Component {
 
     componentDidMount() {
         
-        axios.get('/adminlogin', {
-
-        })
+        axios.get('/adminlogin')
         .then(res=>{
-           console.log(res.data[0]);
+           console.log(res.data);
             this.setState({
                 login: res.data,
             })
