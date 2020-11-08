@@ -9,7 +9,7 @@ const path = require('path');
 const loginRoute = require('./routes/loginRoute');
 
 
-require('dotenv').config({  path: "env" } );
+require('dotenv').config({  path: "env" } )
 
 app.use(cors());
 app.use(express.json());
