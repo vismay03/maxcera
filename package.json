@@ -39,9 +39,7 @@
     "prestart": "npm run build:tailwind",
     "prebuild": "npm run build:tailwind",
     "start": "nodemon backend/server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "rm -rf dist && backend -d dust && npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
