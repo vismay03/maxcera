@@ -25,7 +25,7 @@ export default class adminLogin extends React.Component {
 
     componentDidMount() {
         
-        axios.get('http://localhost:4000/adminlogin')
+        axios.get('wss://maxcera.now.sh/adminlogin')
         .then(res=>{
            
             this.setState({
