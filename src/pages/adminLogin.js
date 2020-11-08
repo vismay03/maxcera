@@ -31,7 +31,7 @@ export default class adminLogin extends React.Component {
             this.setState({
                 login: res.data,
             })
-        })htt
+        })
         .catch(err=> console.log(err) )
        
    
