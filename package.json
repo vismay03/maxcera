@@ -39,7 +39,7 @@
     "prestart": "npm run build:tailwind",
     "prebuild": "npm run build:tailwind",
     "start": "nodemon backend/server.js",
-    "build": "rm -rf dist && backend -d dust && npm install"
+    "build": "rm -rf dist && npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
