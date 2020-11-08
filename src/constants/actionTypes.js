@@ -1,1 +1,0 @@
-export const FETCH_ADMIN = "FETCH_ADMIN";
