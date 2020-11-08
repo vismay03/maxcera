@@ -27,7 +27,7 @@ export default class adminLogin extends React.Component {
         
         axios.get('https://maxcera.now.sh/adminlogin')
         .then(res=>{
-           
+           console.log(res.data);
             this.setState({
                 login: res.data,
             })
