@@ -25,13 +25,13 @@ export default class adminLogin extends React.Component {
 
     componentDidMount() {
         
-        axios.get('/adminlogin')
+        axios.get('http://localhost:4000/adminlogin')
         .then(res=>{
            console.log(res.data);
             this.setState({
                 login: res.data,
             })
-        })
+        })htt
         .catch(err=> console.log(err) )
        
    
