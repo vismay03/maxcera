@@ -1,7 +1,6 @@
 {
   "name": "maxcera",
   "version": "0.1.0",
- 
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -39,7 +38,7 @@
     "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
     "prestart": "npm run build:tailwind",
     "prebuild": "npm run build:tailwind",
-    "start": "nodemon backend/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -63,5 +62,5 @@
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.6"
   },
-  "proxy":"https://localhost:4000/"
+  "proxy": "https://localhost:4000/"
 }

@@ -6,13 +6,16 @@ export default class Header extends Component {
     render() {
         return (
               <header className="flex text-oswald justify-around bg-black uppercase text-right text-white" >
-          <img src={logo} className="logo w-50 h-18" alt=""/>
+         
+          <Link className="px-4" to="/">
+          <img src={logo} className="logo w-48 h-16" alt=""/>
+          </Link>
           <div className="flex text-center w-30 p-8"> 
 
-            <Link className="px-4" onClick={this.onClickHome} to="/">Home</Link>
+            <Link className="px-4" to="/">Home</Link>
             <Link className="px-4" >Sanitaryware</Link>
-            <Link className="px-4" onClick={this.onClickAbout} to="/about">About us</Link>
-            <Link className="px-4" onClick={this.onClickContact} to="/contact">Contact us</Link>
+            <Link className="px-4" to="/about">About us</Link>
+            <Link className="px-4" to="/contact">Contact us</Link>
 
           </div>
         </header>
